@@ -1,0 +1,66 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: antiquewhite;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+#all {
+    border: solid antiquewhite 3px;
+    border-radius: 25px;
+    background-color: indianred;
+    padding: 25px;
+}
+
+h1 {
+    font-size: 60px;
+    color: antiquewhite;
+    text-align: center;
+    margin: 0;
+}
+
+#session {
+    border: antiquewhite solid 3px;
+    border-radius: 20px;
+    width: 180px;
+    height: 180px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.timer {
+    display: inline-block;
+    padding: 27px;
+}
+
+p {
+    color: antiquewhite;
+}
+
+.row {
+    width: 100%;
+    display: inline-block;
+    justify-content: center;
+    font-size: 40pt;
+    color: antiquewhite;
+}
+
+.timer-element {
+    display: inline-block;
+    font-size: 25pt;
+    color: antiquewhite;
+}
+
+button {
+    background: none;
+    border: none;
+    color: antiquewhite;
+    display: inline-block;
+}
+
+#reset, #start_stop {
+    font-size: 20pt;
+}

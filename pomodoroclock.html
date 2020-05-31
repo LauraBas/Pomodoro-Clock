@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <title>Clock</title>
+</head>
+<body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<div id="all">
+    <div>
+        <h1 id="title">Pomodoro Clock</h1>
+    </div>
+
+    <div id="break">
+        <div class="timer" id="break-label">
+            <p>Break Length</p>
+            <button class="timer-element" id="break-decrement" onclick="bdecrement()">
+                <i class="fa fa-arrow-down"></i>
+            </button>
+            <div class="timer-element" id="break-length">5</div>
+            <button class="timer-element" id="break-increment" onclick="bincrement()">
+                <i class="fa fa-arrow-up"></i>
+            </button>
+        </div>
+        <div class="timer" id="session-label">
+            <p>Session Length</p>
+            <button class="timer-element" id="session-decrement" onclick="sdecrement()">
+                <i class="fa fa-arrow-down"></i>
+            </button>
+            <div class="timer-element" id="session-length">25</div>
+            <button class="timer-element" id="session-increment" onclick="sincrement()">
+                <i class="fa fa-arrow-up"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div id="session">
+            <div id="timer-label">Session</div>
+            <div id="time-left">
+                <span id="minutes">25</span>
+                <span id="colon">:</span>
+                <span id="seconds">00</span>
+            </div>
+            <button id="start_stop" onclick="playpause()">
+                <i class="fa fa-pause"></i>
+                <i class="fa fa-play"></i>
+            </button>
+            <button id="reset" onclick="reset()">
+                <i class="fa fa-refresh"></i>
+            </button>
+        </div>
+    </div>
+    <audio id="beep"src="campanas.mp3"></audio>
+</div>
+</body>
+</html>
+
+<script src="js.js"></script>
