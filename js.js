@@ -8,11 +8,11 @@ let uiMin;
 let uiSec;
 
 setSecond(0)
-setMinutes(1)
+setMinutes(25)
 
 let counterId = null;
 
-const VELOCIDAD = 100;
+const VELOCIDAD = 1000;
 
 function reset() {
     bLength.innerText = "5"
